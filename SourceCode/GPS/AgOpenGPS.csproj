@@ -145,6 +145,12 @@
     <Compile Include="Classes\CTurn.cs" />
     <Compile Include="Classes\CTurnLines.cs" />
     <Compile Include="Classes\CTool.cs" />
+    <Compile Include="Forms\FormFreeDrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFreeDrive.Designer.cs">
+      <DependentUpon>FormFreeDrive.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Pickers\FormColorPicker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -567,6 +573,9 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Forms\FormFreeDrive.resx">
+      <DependentUpon>FormFreeDrive.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pickers\FormColorPicker.resx">
       <DependentUpon>FormColorPicker.cs</DependentUpon>
     </EmbeddedResource>

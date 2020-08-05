@@ -1176,6 +1176,14 @@ namespace AgOpenGPS
             stripSectionColor.BackColor = sectionColorDay;
         }
 
+        private void toolStripFreeDrive_Click(object sender, EventArgs e)
+        {
+            using (var form = new Forms.FormFreeDrive(this))
+            {
+                var result = form.ShowDialog();
+            }
+        }
+
         private void keyboardToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             isKeyboardOn = !isKeyboardOn;
