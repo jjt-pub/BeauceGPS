@@ -224,6 +224,18 @@
             this.btnFullScreen = new System.Windows.Forms.Button();
             this.btnZoomIn = new ProXoft.WinForms.RepeatButton();
             this.btnZoomOut = new ProXoft.WinForms.RepeatButton();
+            this.grpPilot = new System.Windows.Forms.GroupBox();
+            this.btnPanelTeleCommande = new System.Windows.Forms.Button();
+            this.btnSteerAngleDown = new ProXoft.WinForms.RepeatButton();
+            this.btnSteerAngleUp = new ProXoft.WinForms.RepeatButton();
+            this.btnFreeDriveZero = new System.Windows.Forms.Button();
+            this.btnFreeDrive = new System.Windows.Forms.Button();
+            this.btnToggle6 = new System.Windows.Forms.Button();
+            this.btnToggle3 = new System.Windows.Forms.Button();
+            this.btnToggle5 = new System.Windows.Forms.Button();
+            this.btnToggle4 = new System.Windows.Forms.Button();
+            this.btnToggle8 = new System.Windows.Forms.Button();
+            this.btnToggle7 = new System.Windows.Forms.Button();
             this.contextMenuStripOpenGL.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStripFlag.SuspendLayout();
@@ -235,6 +247,7 @@
             this.statusStripLeft.SuspendLayout();
             this.panelSim.SuspendLayout();
             this.contextManualColor.SuspendLayout();
+            this.grpPilot.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStripOpenGL
@@ -809,7 +822,7 @@
             this.toolStripMenuFlagForm.Image = global::AgOpenGPS.Properties.Resources.OK64;
             this.toolStripMenuFlagForm.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuFlagForm.Name = "toolStripMenuFlagForm";
-            this.toolStripMenuFlagForm.Size = new System.Drawing.Size(244, 70);
+            this.toolStripMenuFlagForm.Size = new System.Drawing.Size(228, 70);
             this.toolStripMenuFlagForm.Text = "toolStripMenuItem3";
             this.toolStripMenuFlagForm.Click += new System.EventHandler(this.toolStripMenuFlagForm_Click);
             // 
@@ -1016,7 +1029,7 @@
             this.btnResetSim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetSim.Font = new System.Drawing.Font("Tahoma", 9.75F);
             this.btnResetSim.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnResetSim.Location = new System.Drawing.Point(585, 4);
+            this.btnResetSim.Location = new System.Drawing.Point(573, 4);
             this.btnResetSim.Name = "btnResetSim";
             this.btnResetSim.Size = new System.Drawing.Size(52, 31);
             this.btnResetSim.TabIndex = 164;
@@ -1032,7 +1045,7 @@
             this.btnResetSteerAngle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetSteerAngle.Font = new System.Drawing.Font("Tahoma", 9.75F);
             this.btnResetSteerAngle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnResetSteerAngle.Location = new System.Drawing.Point(520, 4);
+            this.btnResetSteerAngle.Location = new System.Drawing.Point(508, 4);
             this.btnResetSteerAngle.Name = "btnResetSteerAngle";
             this.btnResetSteerAngle.Size = new System.Drawing.Size(58, 31);
             this.btnResetSteerAngle.TabIndex = 162;
@@ -1057,10 +1070,10 @@
             this.hsbarSteerAngle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hsbarSteerAngle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.hsbarSteerAngle.LargeChange = 20;
-            this.hsbarSteerAngle.Location = new System.Drawing.Point(332, 1);
+            this.hsbarSteerAngle.Location = new System.Drawing.Point(326, 1);
             this.hsbarSteerAngle.Maximum = 800;
             this.hsbarSteerAngle.Name = "hsbarSteerAngle";
-            this.hsbarSteerAngle.Size = new System.Drawing.Size(168, 37);
+            this.hsbarSteerAngle.Size = new System.Drawing.Size(162, 37);
             this.hsbarSteerAngle.TabIndex = 179;
             this.hsbarSteerAngle.Value = 400;
             this.hsbarSteerAngle.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hsbarSteerAngle_Scroll);
@@ -1073,7 +1086,7 @@
             this.hsbarStepDistance.Location = new System.Drawing.Point(82, 1);
             this.hsbarStepDistance.Minimum = -6;
             this.hsbarStepDistance.Name = "hsbarStepDistance";
-            this.hsbarStepDistance.Size = new System.Drawing.Size(168, 37);
+            this.hsbarStepDistance.Size = new System.Drawing.Size(162, 37);
             this.hsbarStepDistance.TabIndex = 178;
             this.hsbarStepDistance.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hsbarStepDistance_Scroll);
             // 
@@ -1473,14 +1486,14 @@
             this.contextMenuABLine.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.editABToolStripMenuItem});
             this.contextMenuABLine.Name = "contextMenuABLine";
-            this.contextMenuABLine.Size = new System.Drawing.Size(116, 26);
+            this.contextMenuABLine.Size = new System.Drawing.Size(110, 26);
             // 
             // editABToolStripMenuItem
             // 
             this.editABToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.editABToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.editABToolStripMenuItem.Name = "editABToolStripMenuItem";
-            this.editABToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.editABToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.editABToolStripMenuItem.Text = "EditAB";
             // 
             // btnAutoSteer
@@ -1759,6 +1772,7 @@
             // toolStripBtnHideLeftStrip
             // 
             this.toolStripBtnHideLeftStrip.AutoSize = false;
+            this.toolStripBtnHideLeftStrip.BackColor = System.Drawing.Color.DimGray;
             this.toolStripBtnHideLeftStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripBtnHideLeftStrip.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripBtnHideLeftStrip.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -1767,6 +1781,7 @@
             this.toolStripBtnHideLeftStrip.ShowDropDownArrow = false;
             this.toolStripBtnHideLeftStrip.Size = new System.Drawing.Size(50, 58);
             this.toolStripBtnHideLeftStrip.Text = "88.8";
+            this.toolStripBtnHideLeftStrip.Click += new System.EventHandler(this.ToolStripBtnHideLeftStrip_Click);
             // 
             // snapToCurrent
             // 
@@ -2279,6 +2294,7 @@
             this.cameraDropDown.ShowDropDownArrow = false;
             this.cameraDropDown.Size = new System.Drawing.Size(72, 78);
             this.cameraDropDown.Text = "toolStripDropDownButton3";
+            this.cameraDropDown.Click += new System.EventHandler(this.CameraDropDown_Click);
             // 
             // twoDToolStripMenuItem
             // 
@@ -2401,7 +2417,7 @@
             this.panelSim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.panelSim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.panelSim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.panelSim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.panelSim.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
             this.panelSim.Controls.Add(this.btnReverseDirection, 0, 0);
             this.panelSim.Controls.Add(this.btnResetSteerAngle, 4, 0);
             this.panelSim.Controls.Add(this.hsbarSteerAngle, 3, 0);
@@ -2441,7 +2457,7 @@
             this.btnSimSetSpeedToZero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimSetSpeedToZero.Font = new System.Drawing.Font("Tahoma", 9.75F);
             this.btnSimSetSpeedToZero.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSimSetSpeedToZero.Location = new System.Drawing.Point(259, 4);
+            this.btnSimSetSpeedToZero.Location = new System.Drawing.Point(253, 4);
             this.btnSimSetSpeedToZero.Name = "btnSimSetSpeedToZero";
             this.btnSimSetSpeedToZero.Size = new System.Drawing.Size(63, 31);
             this.btnSimSetSpeedToZero.TabIndex = 453;
@@ -2628,12 +2644,180 @@
             this.btnZoomOut.UseVisualStyleBackColor = false;
             this.btnZoomOut.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnZoomOut_MouseDown);
             // 
+            // grpPilot
+            // 
+            this.grpPilot.BackColor = System.Drawing.Color.Transparent;
+            this.grpPilot.Controls.Add(this.btnToggle6);
+            this.grpPilot.Controls.Add(this.btnToggle3);
+            this.grpPilot.Controls.Add(this.btnToggle5);
+            this.grpPilot.Controls.Add(this.btnToggle4);
+            this.grpPilot.Controls.Add(this.btnToggle8);
+            this.grpPilot.Controls.Add(this.btnToggle7);
+            this.grpPilot.Controls.Add(this.btnSteerAngleDown);
+            this.grpPilot.Controls.Add(this.btnSteerAngleUp);
+            this.grpPilot.Controls.Add(this.btnFreeDriveZero);
+            this.grpPilot.Controls.Add(this.btnFreeDrive);
+            this.grpPilot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.grpPilot.Location = new System.Drawing.Point(77, 338);
+            this.grpPilot.Name = "grpPilot";
+            this.grpPilot.Size = new System.Drawing.Size(333, 177);
+            this.grpPilot.TabIndex = 456;
+            this.grpPilot.TabStop = false;
+            this.grpPilot.Enter += new System.EventHandler(this.GrpPilot_Enter);
+            // 
+            // btnPanelTeleCommande
+            // 
+            this.btnPanelTeleCommande.Location = new System.Drawing.Point(0, 543);
+            this.btnPanelTeleCommande.Name = "btnPanelTeleCommande";
+            this.btnPanelTeleCommande.Size = new System.Drawing.Size(71, 50);
+            this.btnPanelTeleCommande.TabIndex = 457;
+            this.btnPanelTeleCommande.Text = "PILOTE";
+            this.btnPanelTeleCommande.UseVisualStyleBackColor = true;
+            this.btnPanelTeleCommande.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // btnSteerAngleDown
+            // 
+            this.btnSteerAngleDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSteerAngleDown.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSteerAngleDown.Image = global::AgOpenGPS.Properties.Resources.ArrowLeft;
+            this.btnSteerAngleDown.Location = new System.Drawing.Point(90, 14);
+            this.btnSteerAngleDown.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSteerAngleDown.Name = "btnSteerAngleDown";
+            this.btnSteerAngleDown.Size = new System.Drawing.Size(68, 45);
+            this.btnSteerAngleDown.TabIndex = 468;
+            this.btnSteerAngleDown.UseVisualStyleBackColor = true;
+            // 
+            // btnSteerAngleUp
+            // 
+            this.btnSteerAngleUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSteerAngleUp.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSteerAngleUp.Image = global::AgOpenGPS.Properties.Resources.ArrowRight;
+            this.btnSteerAngleUp.Location = new System.Drawing.Point(167, 14);
+            this.btnSteerAngleUp.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSteerAngleUp.Name = "btnSteerAngleUp";
+            this.btnSteerAngleUp.Size = new System.Drawing.Size(68, 45);
+            this.btnSteerAngleUp.TabIndex = 469;
+            this.btnSteerAngleUp.UseVisualStyleBackColor = true;
+            // 
+            // btnFreeDriveZero
+            // 
+            this.btnFreeDriveZero.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFreeDriveZero.Location = new System.Drawing.Point(261, 14);
+            this.btnFreeDriveZero.Name = "btnFreeDriveZero";
+            this.btnFreeDriveZero.Size = new System.Drawing.Size(56, 45);
+            this.btnFreeDriveZero.TabIndex = 467;
+            this.btnFreeDriveZero.Text = ">0<";
+            this.btnFreeDriveZero.UseVisualStyleBackColor = true;
+            // 
+            // btnFreeDrive
+            // 
+            this.btnFreeDrive.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFreeDrive.Location = new System.Drawing.Point(6, 14);
+            this.btnFreeDrive.Name = "btnFreeDrive";
+            this.btnFreeDrive.Size = new System.Drawing.Size(68, 44);
+            this.btnFreeDrive.TabIndex = 466;
+            this.btnFreeDrive.Text = "Drive";
+            this.btnFreeDrive.UseVisualStyleBackColor = true;
+            this.btnFreeDrive.Click += new System.EventHandler(this.BtnFreeDrive_Click);
+            // 
+            // btnToggle6
+            // 
+            this.btnToggle6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle6.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle6.Location = new System.Drawing.Point(6, 120);
+            this.btnToggle6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle6.Name = "btnToggle6";
+            this.btnToggle6.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle6.TabIndex = 485;
+            this.btnToggle6.Text = "Toggle 6";
+            this.btnToggle6.UseVisualStyleBackColor = false;
+            // 
+            // btnToggle3
+            // 
+            this.btnToggle3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle3.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle3.Location = new System.Drawing.Point(6, 64);
+            this.btnToggle3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle3.Name = "btnToggle3";
+            this.btnToggle3.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle3.TabIndex = 482;
+            this.btnToggle3.Text = "Toggle 3";
+            this.btnToggle3.UseVisualStyleBackColor = false;
+            // 
+            // btnToggle5
+            // 
+            this.btnToggle5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle5.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle5.Location = new System.Drawing.Point(224, 65);
+            this.btnToggle5.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle5.Name = "btnToggle5";
+            this.btnToggle5.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle5.TabIndex = 484;
+            this.btnToggle5.Text = "Toggle 5";
+            this.btnToggle5.UseVisualStyleBackColor = false;
+            // 
+            // btnToggle4
+            // 
+            this.btnToggle4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle4.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle4.Location = new System.Drawing.Point(121, 64);
+            this.btnToggle4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle4.Name = "btnToggle4";
+            this.btnToggle4.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle4.TabIndex = 483;
+            this.btnToggle4.Text = "Toggle 4";
+            this.btnToggle4.UseVisualStyleBackColor = false;
+            // 
+            // btnToggle8
+            // 
+            this.btnToggle8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle8.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle8.Location = new System.Drawing.Point(225, 121);
+            this.btnToggle8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle8.Name = "btnToggle8";
+            this.btnToggle8.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle8.TabIndex = 487;
+            this.btnToggle8.Text = "Toggle 8";
+            this.btnToggle8.UseVisualStyleBackColor = false;
+            // 
+            // btnToggle7
+            // 
+            this.btnToggle7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnToggle7.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnToggle7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToggle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnToggle7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnToggle7.Location = new System.Drawing.Point(121, 120);
+            this.btnToggle7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnToggle7.Name = "btnToggle7";
+            this.btnToggle7.Size = new System.Drawing.Size(93, 39);
+            this.btnToggle7.TabIndex = 486;
+            this.btnToggle7.Text = "Toggle 7";
+            this.btnToggle7.UseVisualStyleBackColor = false;
+            // 
             // FormGPS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1302, 691);
+            this.Controls.Add(this.btnPanelTeleCommande);
+            this.Controls.Add(this.grpPilot);
             this.Controls.Add(this.btnDayNightMode);
             this.Controls.Add(this.btnSection13Man);
             this.Controls.Add(this.btnSection14Man);
@@ -2691,6 +2875,7 @@
             this.statusStripLeft.PerformLayout();
             this.panelSim.ResumeLayout(false);
             this.contextManualColor.ResumeLayout(false);
+            this.grpPilot.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2891,6 +3076,18 @@
         public System.Windows.Forms.ToolStripMenuItem steerChartStripMenu;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         public System.Windows.Forms.Button btnDayNightMode;
+        private System.Windows.Forms.GroupBox grpPilot;
+        private System.Windows.Forms.Button btnPanelTeleCommande;
+        private ProXoft.WinForms.RepeatButton btnSteerAngleDown;
+        private ProXoft.WinForms.RepeatButton btnSteerAngleUp;
+        private System.Windows.Forms.Button btnFreeDriveZero;
+        private System.Windows.Forms.Button btnFreeDrive;
+        private System.Windows.Forms.Button btnToggle6;
+        private System.Windows.Forms.Button btnToggle3;
+        private System.Windows.Forms.Button btnToggle5;
+        private System.Windows.Forms.Button btnToggle4;
+        private System.Windows.Forms.Button btnToggle8;
+        private System.Windows.Forms.Button btnToggle7;
     }
 }
 

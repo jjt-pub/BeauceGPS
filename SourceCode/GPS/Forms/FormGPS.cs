@@ -1176,6 +1176,43 @@ namespace AgOpenGPS
             stripSectionColor.BackColor = sectionColorDay;
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {   
+            //MessageBox.Show  ("Bouton pilote declenche");
+            grpPilot.Visible = !grpPilot.Visible;
+            if (grpPilot.Visible)
+            {
+                grpPilot.BackColor = System.Drawing.Color.Transparent;
+            }
+
+        }
+
+        private void ToolStripBtnHideLeftStrip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CameraDropDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GrpPilot_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnFreeDrive_Click(object sender, EventArgs e)
+        {
+            FormSteer frm = new FormSteer(this);
+            frm.btnFreeDrive_Click(null, null);
+        }
+
         private void keyboardToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             isKeyboardOn = !isKeyboardOn;

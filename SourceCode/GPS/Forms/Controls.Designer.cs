@@ -597,7 +597,7 @@ namespace AgOpenGPS
             {
                 //if auto is off just have on-off for choices of section buttons
                 if (section[0].manBtnState == manBtn.Off) section[0].manBtnState = manBtn.Auto;
-                ManualBtnUpdate(0, btnSection1Man);
+                ManualBtnUpdate(0,  btnSection1Man);
                 return;
             }
 

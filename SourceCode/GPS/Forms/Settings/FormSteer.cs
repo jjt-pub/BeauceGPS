@@ -252,7 +252,7 @@ namespace AgOpenGPS
         //    mf.ast.driveFreeSteerAngle = (Int16)hSBarFreeDrive.Value;
         //}
 
-        private void btnFreeDrive_Click(object sender, EventArgs e)
+        public void btnFreeDrive_Click(object sender, EventArgs e)
         {
             if (mf.ast.isInFreeDriveMode)
             {
