@@ -1209,6 +1209,8 @@ namespace AgOpenGPS
 
         private void BtnFreeDrive_Click(object sender, EventArgs e)
         {
+            //Modifié le 24/12/2020
+
             FormSteer frm = new FormSteer(this);
             frm.btnFreeDrive_Click(null, null);
         }
